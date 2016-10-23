@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo"
+    android:columnCount="1"
+    android:gravity="center_vertical|center_horizontal"
+    android:rowCount="2"
+    tools:context=".UsuariosActivity" >
+    
+    
+    		 <GridLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                
+	                android:columnCount="2"
+	                android:rowCount="2" >
+
+	                <LinearLayout
+	                    android:id="@+id/lusuariosnovo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/inovosuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/novousuario" />
+
+	                    <TextView
+	                        android:id="@+id/tnovousuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Novo"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/lusuarioexcluir"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/iexcluirusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/excluirusuario" />
+
+	                    <TextView
+	                        android:id="@+id/texcluirusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Excluir"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/lusuarioeditar"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/ieditarusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/editarusuario" />
+
+	                    <TextView
+	                        android:id="@+id/teditarusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Editar"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/lusuariolistar"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical" 
+	                    android:padding="10dp">
+
+	                    <ImageView
+	                        android:id="@+id/ilistarusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/listarusuario" />
+
+	                    <TextView
+	                        android:id="@+id/tlistarusuario"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Listar"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	            </GridLayout>
+
+</RelativeLayout>

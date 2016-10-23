@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/fundo"
+    android:gravity="center"
+    tools:context=".FichasActivity" >
+    
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+    <LinearLayout
+        android:id="@+id/barraNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="#87F007"
+        >
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+       android:id="@+id/FundoMEdio"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:alpha="0.7"
+       android:background="#FFFFFF"
+       android:gravity="left" >
+        
+<ScrollView
+    android:id="@+id/scrolldorsais"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="always" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#585858" >
+
+            <TextView
+                android:id="@+id/colOrdem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Ordem"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colExercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Exercicios"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colSeries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="SeriesXRep."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colCarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tableLayout1"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Carga"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+        </TableRow>
+	
+        <TableRow
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puxador Costas"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+      
+   	 		</TableLayout>
+     	</ScrollView>
+    </LinearLayout>
+
+   
+
+</LinearLayout>
+
+</RelativeLayout>

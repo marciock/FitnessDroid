@@ -1,0 +1,417 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/fundo"
+    tools:context=".FormUsuariosActivity" 
+    android:gravity="center">
+
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >   
+    
+    <LinearLayout
+        android:id="@+id/barraNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="#87F007">
+
+        <TextView
+            android:id="@+id/titleForm"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            />
+
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/FundoMeio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:alpha="0.7"
+	    android:background="#FFFFFF"
+	    android:gravity="left" >
+
+	    <ScrollView
+	        android:id="@+id/scrollUsuarios"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:overScrollMode="always"  >
+	
+	        <TableLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true" >
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <ImageView
+	                    android:id="@+id/imageAvatar"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="10dp"
+	                    android:src="@drawable/avatar" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textNome"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Nome"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:focusable="true" >
+
+	                <EditText
+	                    android:id="@+id/usuarioNome"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="15"
+	                    android:inputType="textPersonName"
+	                    android:textColor="#000000"
+	                    android:textColorHint="#C3C3C3" >
+
+	                    <requestFocus />
+	                </EditText>
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textEmail"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:text="email"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioEmail"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="15"
+	                    android:inputType="textEmailAddress"
+	                    android:textColor="#000000"
+	                    android:textColorHint="#C3C3C3" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textEndereco"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Endereço"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioEndereco"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="15"
+	                    android:inputType="textPostalAddress"
+	                    android:textColor="#000000"
+	                    android:textColorHint="#C3C3C3" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textCidade"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Cidade"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioCidade"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="15"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textEstado"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Estado"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioEstado"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="5"
+	                    android:inputType="text"
+	                    android:singleLine="true"
+	                    android:textColor="#000000"
+	                    android:textColorHint="#C3C3C3" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textCep"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="CEP"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioCep"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="8"
+	                    android:inputType="textPostalAddress"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textPais"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Pais"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioPais"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="5"
+	                    android:inputType="textPostalAddress"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textNascimento"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Data de Nascimento"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+				<LinearLayout >
+	                <EditText
+	                    android:id="@+id/usuarioDia"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:ems="2"
+	                    android:freezesText="false"
+	                    android:inputType="number"
+	                    android:textColor="#000000" />
+
+	                <EditText
+	                    android:id="@+id/usuarioMes"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="2"
+	                    android:freezesText="false"
+	                    android:inputType="number"
+	                    android:textColor="#000000" />
+
+	                <EditText
+	                    android:id="@+id/usuarioAno"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="4"
+	                    android:freezesText="false"
+	                    android:inputType="number"
+	                    android:textColor="#000000" />
+	                </LinearLayout>
+
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textSexo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Sexo"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <Spinner
+	                    android:id="@+id/spinnerSexo"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="#87F007"
+	                    android:clickable="true"
+	                    android:visibility="visible" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textInstrutor"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Instrutor"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <Spinner
+	                    android:id="@+id/spinnerInstrutor"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="#87F007"
+	                    android:clickable="true"
+	                    android:visibility="visible" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textFone1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Fone 1"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioFone1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="10"
+	                    android:inputType="phone"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/textFone2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="Fone 2"
+	                    android:textAppearance="?android:attr/textAppearanceMedium"
+	                    android:textColor="#000000" />
+	            </TableRow>
+
+	            <TableRow
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+
+	                <EditText
+	                    android:id="@+id/usuarioFone2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:ems="10"
+	                    android:inputType="phone"
+	                    android:textColor="#000000" />
+	            </TableRow>
+	        </TableLayout>
+	
+	   	 </ScrollView>
+	</LinearLayout>
+</LinearLayout>	
+</RelativeLayout>

@@ -1,0 +1,608 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:alpha="0.7"
+    android:background="@drawable/fundo"
+    android:gravity="center"
+    tools:context=".FormMedidasActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/barraNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#87F007"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/titleForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="80dp"
+                    android:text="Medidas e Cálculos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FundoMeio1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/rowFoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/imageAvatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/avatar" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowNomeText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textVoltar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="15"
+                            android:text="Nome"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowInstrutorEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/editNome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nome do Usuário"
+                            android:textColor="#000000" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barraNome1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#87F007"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/titleForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="80dp"
+                    android:text="IMC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FundoMeio2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/rowInstrutorText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textIdade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Idade"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textPeso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peso"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textAltura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Altura"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textIMC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IMC"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowIdadeEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editIdade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editPeso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editAltura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textIMC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IMC"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barraNome2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#87F007"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/titleForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="80dp"
+                    android:text="Circunferências" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FundoMeio3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/rowCircunferenciasText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textTronco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tronco"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textOmbros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ombros"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textCintura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cintura"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowTroncoEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editTronco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editOmbros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editCintura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowCircunferenciasText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textBraco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Braço"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textCoxa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coxa"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textPanturrilha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Panturrilha"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowBracoEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editBraco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editCoxa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editPanturrilha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barraNome3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#87F007"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/titleForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="80dp"
+                    android:text="Drobas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FundoMeio4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/rowDobrasText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textTricipital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tricipital"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textPeitoral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peitoral"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textSubaxilar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medio Axilar"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textSubescapular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subescaputal"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowTriciptalEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editTriciptal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editPeitoral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editmedioaxilar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editSubescapular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowCircunferenciasText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textBraco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Suprailíaca  "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textCoxa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coxa"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textPanturrilha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abdominal"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowBracoEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <EditText
+                            android:id="@+id/editSuprailiaca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editDobraCoxa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/editAbdominal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="4"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                        
+                    </TableRow>
+                </TableLayout>
+                
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/barraNome5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#87F007"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/titleForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="80dp"
+                    android:text="Circunferências" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FundoMeio5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:background="#FFFFFF"
+                android:gravity="center" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/rowResultadosText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/textComDobras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Resultado cálculo 7 dobras:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textDobras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00000"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowResultadosEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+                        
+                        <TextView
+                            android:id="@+id/textSemDobras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Resultado cálculo circunferências:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textResultadoCircunferencia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00000"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                     </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

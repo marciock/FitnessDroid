@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitnessDroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Ajuda</string>
+    <string name="title_activity_home">FitnessDroid</string>
+    <string name="title_activity_logo">FitnessDroid</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_usuarios">Usuários</string>
+    <string name="title_activity_form_usuarios">Usuários</string>
+    <string name="title_activity_my_camera">FitnessDroid</string>
+    <string name="title_activity_form_instrutor">Instrutores</string>
+    <string name="title_activity_instrutores">Instrutores</string>
+    <string name="title_activity_medidas">Medidas</string>
+    <string name="title_activity_anamnese">Anamnese</string>
+    <string name="title_activity_personalizar">Personalizar</string>
+    <string name="title_activity_triceps">Triceps</string>
+    <string name="title_activity_dorsais">Dorsais</string>
+    <string name="title_activity_fichas">Fichas</string>
+    <string name="title_activity_form_excluir">Excluir</string>
+    <string name="title_activity_form_atualizar">Atualizar</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_list_usuario">Usuario</string>
+    <string name="title_activity_form_medidas">Medidas</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_form_anamnese">Anamnese</string>
+    <string name="title_activity_tab_atividade">Atividade</string>
+    <string name="title_activity_tab_historico">Histórico</string>
+    <string name="title_activity_tab_sintomas">Sintomas</string>
+    <string name="title_activity_tab_tratamento">Tratamento</string>
+    <string name="title_activity_list_folders">Pastas</string>
+    <string name="title_activity_configuracoes">Configurações</string>
+    <string name="title_activity_form_manager_sound">Repertório</string>
+    <string name="title_activity_form_manager_exercices">Exercícios</string>
+    <string name="title_activity_configura_exercicios">Exercícios</string>
+    <string name="title_activity_form_treino">FormTreinoActivity</string>
+
+</resources>

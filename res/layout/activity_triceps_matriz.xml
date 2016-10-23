@@ -1,0 +1,931 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/fundo"
+    android:gravity="center"
+    tools:context=".TricepsActivity" >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+    <LinearLayout
+        android:id="@+id/barraNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="#87F007"
+        >
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+    
+   <LinearLayout
+       android:id="@+id/FundoMEdio"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:alpha="0.7"
+       android:background="#FFFFFF"
+       android:gravity="left" >
+        
+<ScrollView
+    android:id="@+id/scrollTriceps"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="always" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#585858" >
+
+            <TextView
+                android:id="@+id/colOrdem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Ordem"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colExercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Exercicios"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colSeries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="SeriesXRep."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+            <TextView
+                android:id="@+id/colCarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tableLayout1"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Carga"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#87F007" />
+
+        </TableRow>
+	
+        <TableRow
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulley/Corda"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+
+         <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulley Inverso"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+		
+         <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testa"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+         
+         <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Francês"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+         <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barra Paralela"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+         <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banco"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Francês Unilat."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep7"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supino Fechado"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep8"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testa/Rot."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep9"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cross-over"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep10"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+            </EditText>
+
+        </TableRow>
+        <TableRow
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <EditText
+                android:id="@+id/editOrdem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:inputType="textCapCharacters"
+                android:lines="1"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+               
+            </EditText>
+
+            <TextView
+                android:id="@+id/textExercico11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coice"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp" />
+
+            <LinearLayout 
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editSeries11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#585858" >
+
+                
+            </EditText>
+                <TextView
+	                android:id="@+id/textX"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="X"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                  <EditText
+                      android:id="@+id/editRep11"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:ems="2"
+                      android:inputType="number"
+                      android:textColor="#000000"
+                      android:textColorHint="#585858" >
+
+               
+            </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editCarga11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#585858" >
+
+                
+         	   </EditText>
+
+       		 </TableRow>
+      
+   	 		</TableLayout>
+     	</ScrollView>
+    </LinearLayout>
+
+   
+
+</LinearLayout>
+
+</RelativeLayout>

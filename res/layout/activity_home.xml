@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo"
+    android:columnCount="1"
+    android:gravity="center_vertical|center_horizontal"
+    android:rowCount="2"
+    tools:context=".HomeActivity" >
+
+	            <GridLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                
+	                android:columnCount="2"
+	                android:rowCount="2" >
+
+	                <LinearLayout
+	                    android:id="@+id/layoutdados"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imagecadastro"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/dadosusuario" />
+
+	                    <TextView
+	                        android:id="@+id/textdados"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Cadastros"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/layouttreinamento"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imagetreinamento"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/treinamento" />
+
+	                    <TextView
+	                        android:id="@+id/TextView01"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Treinamento"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/layoutconfiguracoes"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imageconfiguracoes"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/configuracoes" />
+
+	                    <TextView
+	                        android:id="@+id/textconfiguracoes"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Configuracoes"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/layoutpersonalizar"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical" 
+	                    android:padding="10dp">
+
+	                    <ImageView
+	                        android:id="@+id/imagepersonalizar"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/pesonalizar" />
+
+	                    <TextView
+	                        android:id="@+id/TextView02"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Personalizar"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	            </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+  	android:background="@drawable/fundo"
+    tools:context=".FormInstrutorActivity" 
+    android:gravity="center">
+    <LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center" >   
+	    
+     <LinearLayout
+        android:id="@+id/barraNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="#87F007">
+
+        <TextView
+            android:id="@+id/titleForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            
+            />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+	    android:id="@+id/FundoMeio"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:alpha="0.7"
+	    android:background="#FFFFFF"
+	    android:gravity="left" >
+	        <ScrollView
+		        android:id="@+id/scrollView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:overScrollMode="always" >
+
+	            <TableLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+		        	android:layout_alignParentRight="true" >
+
+	                <TableRow
+	                    android:id="@+id/rowFoto"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center">
+
+	                    <ImageView
+	                        android:id="@+id/imageAvatar"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/avatar" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/rowInstrutorText"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/textVoltar"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Instrutor"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/rowInstrutorEdit"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" >
+
+	                    <EditText
+	                        android:id="@+id/editInstrutor"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ems="15"
+	                        android:inputType="textPersonName"
+	                        android:textColor="#000000" >
+
+	                        <requestFocus />
+	                    </EditText>
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/rowEmailText"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/textEmialInstrutor"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Email"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/rowEmailEdit"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <EditText
+	                        android:id="@+id/editEmailInstrutor"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:ems="10"
+	                        android:inputType="textEmailAddress"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/rowFone1Text"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/textInstrutorFone"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Fone"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/tableRow2"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <EditText
+	                        android:id="@+id/editInstrutorFone"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ems="10"
+	                        android:inputType="phone" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/tableRow3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <TextView
+	                        android:id="@+id/textDescricao"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Descriçao Tecnica"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	                <TableRow
+	                    android:id="@+id/tableRow4"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <EditText
+	                        android:id="@+id/editDescricaoTecnica"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:ems="10"
+	                        android:inputType="textMultiLine"
+	                        android:textColor="#000000" />
+
+	                </TableRow>
+
+	            </TableLayout>
+		        
+	         </ScrollView>
+
+        </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

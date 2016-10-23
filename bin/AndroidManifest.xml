@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessdroid"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="false"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.fitnessdroid.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.LogoActivity"
+            android:label="@string/title_activity_logo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.CadastroActivity"
+            android:label="@string/title_activity_cadastro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.UsuariosActivity"
+            android:label="@string/title_activity_usuarios"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormUsuariosActivity"
+            android:label="@string/title_activity_form_usuarios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.MyCameraActivity"
+            android:label="@string/title_activity_my_camera"
+            android:theme="@android:style/Animation.Dialog" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.MyCameraInstrutor"
+            android:label="@string/title_activity_my_camera"
+            android:theme="@android:style/Animation.Dialog" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormInstrutorActivity"
+            android:label="@string/title_activity_form_instrutor" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.InstrutoresActivity"
+            android:label="@string/title_activity_instrutores"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.MedidasActivity"
+            android:label="@string/title_activity_medidas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.AnamneseActivity"
+            android:label="@string/title_activity_anamnese"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.PersonalizarActivity"
+            android:label="@string/title_activity_personalizar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ExerciciosActivity"
+            android:label="@string/title_activity_triceps" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.DorsaisActivity"
+            android:label="@string/title_activity_dorsais" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FichasActivity"
+            android:label="@string/title_activity_fichas" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormExcluirActivity"
+            android:label="@string/title_activity_form_excluir" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormAtualizarActivity"
+            android:label="@string/title_activity_form_atualizar" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.AtualizaUsuarioActivity"
+            android:label="@string/title_activity_form_atualizar" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.AtualizaIstrutorActivity"
+            android:label="@string/title_activity_form_atualizar" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListUsuarioActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_list_usuario"
+            android:theme="@style/FullscreenTheme" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormMedidasActivity"
+            android:label="@string/title_activity_form_medidas" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormAnamneseActivity"
+            android:label="@string/title_activity_form_anamnese" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.TabAtividadeActivity"
+            android:label="@string/title_activity_tab_atividade" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.TabHistoricoActivity"
+            android:label="@string/title_activity_tab_historico" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.TabSintomasActivity"
+            android:label="@string/title_activity_tab_sintomas" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.TabTratamentoActivity"
+            android:label="@string/title_activity_tab_tratamento" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListFoldersActivity"
+            android:label="@string/title_activity_list_folders"
+            android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ConfiguracoesActivity"
+            android:label="@string/title_activity_configuracoes" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormManagerSoundActivity"
+            android:label="@string/title_activity_form_manager_sound" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormManagerExercicesActivity"
+            android:label="@string/title_activity_form_manager_exercices" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ConfiguraExerciciosActivity"
+            android:label="@string/title_activity_configura_exercicios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ExercicesForSounds"
+            android:label="@string/title_activity_configura_exercicios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListUsuarioMedidasActivity"
+            android:label="@string/title_activity_form_usuarios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListaUsuarioActivity"
+            android:label="@string/title_activity_form_usuarios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormListarActivity"
+            android:label="@string/title_activity_form_usuarios" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListaInstrutorActivity"
+            android:label="@string/title_activity_form_instrutor" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.FormTreinoActivity"
+            android:label="@string/title_activity_form_treino" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListUsuarioTreinoActivity"
+            android:label="@string/title_activity_form_treino" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListGroupTreinoActivity"
+            android:label="@string/title_activity_form_treino" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.fitnessdroid.ListUsuarioAnamneseActivity"
+            android:label="@string/title_activity_form_anamnese" android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

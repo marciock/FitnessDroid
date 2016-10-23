@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundo"
+    android:columnCount="1"
+    android:gravity="center_vertical|center_horizontal"
+    android:rowCount="2"
+    tools:context=".CadastroActivity" >
+
+    <GridLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                
+	                android:columnCount="2"
+	                android:rowCount="2" >
+
+	                <LinearLayout
+	                    android:id="@+id/lconfigexercicios"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imageusuarios"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/usuarios" />
+
+	                    <TextView
+	                        android:id="@+id/textusuarios"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Usuarios"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/lconfigrepertorio"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imageinstrutores"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/instrutores" />
+
+	                    <TextView
+	                        android:id="@+id/textoinstrutores"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Instrutores"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/layoutmedidas"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical"
+	                    android:padding="10dp" >
+
+	                    <ImageView
+	                        android:id="@+id/imagemedidas"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/medidasavaliacao" />
+
+	                    <TextView
+	                        android:id="@+id/textmedidas"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Medidas"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/layoutanamnese"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="fill_horizontal"
+	                    android:gravity="center"
+	                    android:orientation="vertical" 
+	                    android:padding="10dp">
+
+	                    <ImageView
+	                        android:id="@+id/imageanaminese"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/anamnese" />
+
+	                    <TextView
+	                        android:id="@+id/textanaminese"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Anamnese"
+	                        android:textAppearance="?android:attr/textAppearanceMedium"
+	                        android:textColor="#87F007"
+	                        android:textSize="14dp" />
+	                </LinearLayout>
+
+	            </GridLayout>
+
+</RelativeLayout>
